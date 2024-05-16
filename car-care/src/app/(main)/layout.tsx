@@ -1,7 +1,7 @@
 "use client";
 
-import NavBar from "@/components/navBar/navBar";
 import { usePathname } from "next/navigation";
+import { SidePanel } from "../../components/sidePanel/sidePanel";
 
 export default function PrivateRouteLayout({
   children,
@@ -12,14 +12,8 @@ export default function PrivateRouteLayout({
 
   return (
     <>
-      <NavBar />
-      <div
-        className={`${
-          path === "/" && "app-padding-t app-padding-x app-padding-b"
-        }`}
-      >
-        {children}
-      </div>
+      <SidePanel />
+      <div className="h-full w-full">{children}</div>
     </>
   );
 }

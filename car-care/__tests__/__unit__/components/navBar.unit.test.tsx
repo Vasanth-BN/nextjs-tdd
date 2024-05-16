@@ -1,6 +1,6 @@
 import LoginModal from "@/app/(main)/login/page";
 import SignInModal from "@/app/(main)/signIn/page";
-import NavBar from "@/components/navBar/navBar";
+import NavBar from "@/components/sidePanel/navBar";
 import {
   COMMON_CONST,
   NAV_BAR_CONST,
