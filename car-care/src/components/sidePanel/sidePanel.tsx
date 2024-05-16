@@ -20,13 +20,6 @@ export const SidePanel = () => {
               priority
             />
           </Link>
-          {/* <Button
-            className="gap-2 mr-3 mt-2 text-primary bg-foreground"
-            size={"sm"}
-            onClick={() => {}}
-          >
-            <HomeRoundedIcon />
-          </Button> */}
         </div>
         <div className="border border-b border-primary mr-4 mb-5 w-full" />
         <ul className=" flex flex-col h-fit w-full align-top pt-0 justify-between">
