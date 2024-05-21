@@ -3,18 +3,18 @@ import { NAV_BAR_CONST } from "@/constants/appConstants";
 import { APP_ROUTES } from "@/constants/appRoutes";
 import Image from "next/image";
 import Link from "next/link";
-import logoCar from "../../../../assets/images/logo-car.svg";
+import logoCar from "../../assets/images/logo-car.svg";
 
 export const SidePanel = () => {
   return (
     <>
-      <div className="fixed z-40 flex flex-col space-y-3 h-full w-100 bg-primary-foreground pl-2 pt-2 pr-24.5 shadow-md max-xl:pr-11 max-lg:px-4">
+      <div className="fixed z-50 flex flex-col space-y-3 h-full w-60 bg-primary-foreground pl-2 pt-2 pr-24.5 shadow-md max-xl:pr-11 max-lg:px-4">
         <div className=" flex h-fit w-full space-x-2 align-top pt-0 justify-between">
           <Link href={APP_ROUTES.ROOT}>
             <Image
               src={logoCar}
               alt={NAV_BAR_CONST.BRAND_LOGO_ALT_LABEL}
-              className="h-12 w-32"
+              className="h-12 w-48"
               width={NAV_BAR_CONST.BRAND_LOGO_WIDTH}
               height={NAV_BAR_CONST.BRAND_LOGO_HEIGHT}
               priority

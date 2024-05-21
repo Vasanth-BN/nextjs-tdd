@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Porsche from "./components/porsche";
 
-function Porsche() {
-  return (
-    <div>Porsche</div>
-  )
+function PorschePage() {
+  return <Porsche />;
 }
 
-export default Porsche
+export default PorschePage;

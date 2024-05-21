@@ -1,8 +1,8 @@
 export const APP_ROUTES = {
   ROOT: "/",
-  BMW: "/bmw",
-  AUDI: "/audi",
-  MERCEDES: "/mercedes",
-  PORSCHE: "/porsche",
-  FERRARI: "/ferrari",
+  BMW: "bmw",
+  MERCEDES: "mercedes",
+  AUDI: "audi",
+  FERRARI: "ferrari",
+  PORSCHE: "porsche",
 };

@@ -1,28 +1,23 @@
 "use client";
 
-import { AudiBackground } from "@/assets/images";
-import {
-  COMMON_CONST,
-  IMAGE_CONST,
-  audiModels,
-} from "@/constants/appConstants";
+import { BmwBackground } from "@/assets/images";
+import { COMMON_CONST, IMAGE_CONST, bmwModels } from "@/constants/appConstants";
 import { APP_ROUTES } from "@/constants/appRoutes";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-
-export default function Audi() {
+export default function BmwPage() {
   const [isModelVisible, toggleModelVisible] = useState(false);
   const router = useRouter();
   const pushNavigation = (id: string | number) => {
-    router.push(`${APP_ROUTES.AUDI}/${id}`);
+    router.push(`${APP_ROUTES.BMW}/${id}`);
   };
   return (
     <>
-      <div className="App">
+      <div className="ml-60 mt-5">
         <Image
-          src={AudiBackground}
-          alt={IMAGE_CONST.AUDI_ALT_TEXT}
+          src={BmwBackground}
+          alt={IMAGE_CONST.BMW_ALT_TEXT}
           objectFit="cover"
           className="pl-60 -z-10"
           fill
@@ -34,7 +29,7 @@ export default function Audi() {
           {COMMON_CONST.HEADER_VIEW_MODELS}
         </div>
         {isModelVisible &&
-          audiModels.map((model, index) => {
+          bmwModels.map((model, index) => {
             return (
               <>
                 <div

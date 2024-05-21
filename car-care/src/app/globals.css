@@ -7,6 +7,8 @@
     --background: 0 0% 0%;
     --foreground: 0 0 100;
 
+    --primary-background: 0 0 100;
+
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
 
@@ -64,9 +66,23 @@
   * {
     @apply m-0 p-0 text-[100%] scroll-smooth;
   }
-  /* body {
-    @apply bg-background text-foreground;
-  } */
+  body {
+    @apply bg-primary-foreground text-foreground;
+  }
+}
+
+@layer utilities {
+  .App {
+    margin-left: 15rem;
+  }
+
+  .brand_bg {
+    z-index: -1;
+    top: 0;
+    margin-left: 240px;
+    width: fit-content;
+    height: fit-content%;
+  }
 }
 
 @layer components {

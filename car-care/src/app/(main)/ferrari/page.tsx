@@ -1,9 +1,7 @@
-import React from 'react'
+import Ferrari from "./components/ferrari";
 
-function Ferrari() {
-  return (
-    <div>Ferrari</div>
-  )
+function FerrariPage() {
+  return <Ferrari />;
 }
 
-export default Ferrari
+export default FerrariPage;

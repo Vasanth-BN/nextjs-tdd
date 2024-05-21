@@ -1,28 +1,28 @@
 "use client";
 
-import { AudiBackground } from "@/assets/images";
+import { FerrariBackground } from "@/assets/images";
 import {
   COMMON_CONST,
   IMAGE_CONST,
-  audiModels,
+  ferrariModels,
 } from "@/constants/appConstants";
 import { APP_ROUTES } from "@/constants/appRoutes";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export default function Audi() {
+export default function Ferrari() {
   const [isModelVisible, toggleModelVisible] = useState(false);
   const router = useRouter();
   const pushNavigation = (id: string | number) => {
-    router.push(`${APP_ROUTES.AUDI}/${id}`);
+    router.push(`${APP_ROUTES.FERRARI}/${id}`);
   };
   return (
     <>
       <div className="App">
         <Image
-          src={AudiBackground}
-          alt={IMAGE_CONST.AUDI_ALT_TEXT}
+          src={FerrariBackground}
+          alt={IMAGE_CONST.FERRARI_ALT_TEXT}
           objectFit="cover"
           className="pl-60 -z-10"
           fill
@@ -34,7 +34,7 @@ export default function Audi() {
           {COMMON_CONST.HEADER_VIEW_MODELS}
         </div>
         {isModelVisible &&
-          audiModels.map((model, index) => {
+          ferrariModels.map((model, index) => {
             return (
               <>
                 <div

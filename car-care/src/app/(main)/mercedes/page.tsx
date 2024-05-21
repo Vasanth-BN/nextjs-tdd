@@ -1,9 +1,7 @@
-import React from 'react'
+import MercedesPage from "./components/mercedes";
 
 function Mercedes() {
-  return (
-    <div>Mercedes</div>
-  )
+  return <MercedesPage />;
 }
 
-export default Mercedes
+export default Mercedes;
