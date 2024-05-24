@@ -1,59 +1,21 @@
-export const NAV_BAR_CONST = {
+export const LOGO_CONST = {
   BRAND_LOGO_ALT_LABEL: "Navigation Bar Brand Logo",
-  BRAND_LOGO_WIDTH: 50,
-  BRAND_LOGO_HEIGHT: 162,
+  BRAND_LOGO_WIDTH: 120,
+  BRAND_LOGO_HEIGHT: 152,
 };
 
 export const IMAGE_CONST = {
-  AUDI_ALT_TEXT: "Audi Background",
-  BMW_ALT_TEXT: "Bmw Background",
-  MERCEDES_ALT_TEXT: "Mercedes Background",
-  FERRARI_ALT_TEXT: "Ferrari Background",
-  PORSCHE_ALT_TEXT: "Porsche Background",
+  SIDE_PANEL_ALT_LABEL: "Side panel bg",
+  FERRARI_ALT_LABEL: "Ferrari Background",
 };
 
 export const COMMON_CONST = {
-  HEADER_VIEW_MODELS: "View Models & Variants",
+  HEADER_VIEW_MODELS: "View Models & Variants of ",
   HEADER_SELECTED_MODEL: "The selected model is ",
+  CLICK_ANYWHERE_LABEL: "Click anywhere in the page to continue!",
 };
 
-export const audiModels = [
-  "R'Line Sport Edition",
-  "A-Series",
-  "Q-Series",
-  "R-Series",
-];
-
-export const bmwModels = [
-  "M'Sport Edition",
-  "3-Series",
-  "5-Series",
-  "7-Series",
-];
-
-export const mercedesModels = [
-  "AMG Edition",
-  "Maybach",
-  "A-Class Limousine",
-  "E-Class",
-  "C-Class",
-  "S-Class",
-  "G-Class",
-];
-
-export const ferrariModels = [
-  "Ferrari Roma",
-  "Ferrari 296 GTB",
-  "Ferrari F8 Tributo",
-  "Ferrari 812",
-  "Ferrari SF90 Stradale",
-];
-
-export const porscheModels = [
-  "Cayenne",
-  "Panamera",
-  "Macan",
-  "Porsche 911",
-  "Porsche 718",
-  "Porsche GT3",
-];
+export const BRAND_CONST = {
+  HEADER_BRAND:
+    "Welcome to car-care. Select the brand model you want to explore about!",
+};
