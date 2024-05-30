@@ -5,7 +5,7 @@ import { BrandState } from "@/types/brand";
 import { ModelState } from "@/types/model";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export type BrandDetailsProps = {

@@ -26,10 +26,6 @@ export const request = async (
       ...options,
     });
 
-    console.log(
-      `network response | method: ${method} | status: ${response.status} | url: ${response.url}`,
-    );
-
     if (response.ok) {
       if (response.status === StatusCodes.NO_CONTENT) return "";
       return await response.json();

@@ -1,8 +1,15 @@
+"use client";
+
 import { SidePanelBg } from "@/assets/images";
 import logoCar from "@/assets/images/logo-car.svg";
-import { IMAGE_CONST, LOGO_CONST } from "@/constants/appConstants";
+import {
+  COMMON_CONST,
+  IMAGE_CONST,
+  LOGO_CONST,
+} from "@/constants/appConstants";
 import { APP_ROUTES } from "@/constants/appRoutes";
 import { BrandState } from "@/types/brand";
+import { signOut } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -47,6 +54,12 @@ export const SidePanel = ({ brands }: SidePanelProps) => {
             );
           })}
         </ul>
+        <p
+          className="font-medium text-primary hover:cursor-pointer"
+          onClick={() => signOut()}
+        >
+          {COMMON_CONST.SIGN_OUT_LABEL}
+        </p>
       </div>
     </>
   );
