@@ -69,3 +69,9 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video

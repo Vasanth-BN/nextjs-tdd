@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { IBM_Plex_Sans as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
+import AuthProvider from "@/providers/authProvider";
+import { SessionProvider } from "next-auth/react";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -21,9 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <html lang="en">
-        <body className={cn("font-sans", fontSans.variable)}>{children}</body>
-      </html>
+      <AuthProvider>
+        <html lang="en">
+          <body className={cn("font-sans", fontSans.variable)}>{children}</body>
+        </html>
+      </AuthProvider>
     </>
   );
 }
